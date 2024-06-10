@@ -1,0 +1,169 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+#bgCon {
+    background-image: url('Images/signup bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bgSub {
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#rightCon{
+    padding: 10px;
+    width: 40%;
+    background-color: #ffffff;
+    text-align: center;
+    border-top-left-radius: 60px;
+}
+
+
+#leftCon {
+    padding: 13px;
+    width: 40%;
+    background-color: rgb(211,222,255);
+    text-align: center;
+    border-bottom-right-radius: 60px;
+}
+
+#gif {
+    width: 70%;
+    height: auto;
+    margin-top: 80px;
+}
+
+#gifSm {
+    width: 40%;
+    height: auto;
+    display: none;
+    margin-bottom: 10px;
+}
+
+#inputCon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputCon input {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#inputCon input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+#inputCon input::placeholder {
+    color: #aaa;
+    font-style: italic;
+} 
+
+#signInButton {
+    margin-top: 15px;
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: white;
+   }
+
+   #signInButton:hover{
+    color: white;
+    transform: scale(1.10);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+   }
+
+   #signInButton::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0a6ddd 0%, #1b011a 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   #signInButton:hover::before {
+    width: 9em;
+   }
+
+   #inputCon p {
+    margin: 30px;
+   }
+
+
+   @media only screen and (max-width: 1000px) {
+    #bgSub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gifSm {
+        display: block;
+        margin: 0 auto 10px auto;
+
+    }
+
+    #rightCon, #leftCon h1 {
+        display: none;
+    }
+
+    #leftCon {
+        width: 100%;
+        background-color: white;
+    }
+    
+    #inputCon input {
+        margin: 5px;
+        width: 80%;
+    }
+
+    #foreText {
+        font-size: 18px;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #signInButton {
+        background-color: rgb(236, 234, 234);
+    }
+   }

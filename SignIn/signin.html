@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yola | Sign In Page</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <main id="bgCon">
+        <section id="bgSub">
+            <div id="rightCon">
+                <img id="gif" src="Images/Tablet login.gif" alt="">
+            </div>
+            <div id="leftCon">
+                <img id="gifSm" src="Images/Tablet login.gif" alt="">
+                <h1>Welcome Back To YOLA!</h1>
+                <p id="foreText">Login to your account and pick up right where you left off.</p>
+                <div id="inputCon">
+                    <input id="email" type="text" placeholder="Username or email" required>
+                    <input id="password" type="password" placeholder="Password" required>
+                    <button id="signInButton" onclick="signIn()" type="submit">Sign In</button>
+                    <p><a href="#">Forgot password?</a></p>
+                    <p>Don’t have an account? <span><a href="/SignUp/index.html">Create account</a></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <script src="signin.js"></script>
+</body>
+</html>
